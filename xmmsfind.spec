@@ -1,5 +1,5 @@
 Summary:	Playlist "jump to file" plugin for XMMS
-Summary(pl):	Wtyczka do XMMSa umo¿liwiaj±ca skok do konkretnego pliku
+Summary(pl):	Wtyczka do XMMS-a umo¿liwiaj±ca skok do konkretnego pliku
 Name:		xmmsfind
 Version:	0.5.1
 Release:	1
@@ -20,10 +20,10 @@ be launched externally from the prompt or from a windowmanager
 shortcut.
 
 %description -l pl
-Ma³a wtyczka do programu X Multimedia system (xmms) która umo¿liwia
+Ma³a wtyczka do programu X Multimedia system (xmms), która umo¿liwia
 u¿ytkownikowi szybkie wyszukiwanie i odtwarzanie utworu z bie¿±cej
-listy. Mo¿e byæ wywo³ywany zewnêtrznie z pow³oki lub ze skrótu
-menad¿era okien.
+listy. Mo¿e byæ wywo³ywana zewnêtrznie z pow³oki lub ze skrótu
+zarz±dcy okien.
 
 %prep
 %setup -q
