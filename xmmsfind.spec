@@ -2,15 +2,16 @@ Summary:	Playlist "jump to file" plugin for XMMS
 Summary(pl):	Wtyczka do XMMSa umo¿liwiaj±ca skok do konkretnego pliku
 Name:		xmmsfind
 Version:	0.4.7
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/xmmsfind/%{name}-%{version}.tar.gz
 # Source0-md5:	6f8b005d4bd9a31f7137893495e48c11
 URL:		http://xmmsfind.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
+Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-%define _xmms_plugin_dir %{_libdir}/xmms
 
 %description
 A small plugin for the X Multimedia System (xmms) that allows the user
@@ -32,9 +33,9 @@ menad¿era okien.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_xmms_plugin_dir}/General,%{_bindir}}
+install -d $RPM_BUILD_ROOT{%{xmms_general_plugindir},%{_bindir}}
 
-install libxmmsfind.so $RPM_BUILD_ROOT%{_xmms_plugin_dir}/General
+install libxmmsfind.so $RPM_BUILD_ROOT%{xmms_general_plugindir}
 install remote/xmmsfind_remote $RPM_BUILD_ROOT%{_bindir}
 
 %clean
@@ -43,5 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc BUGS README TODO VERSION
-%attr(755,root,root) %{_xmms_plugin_dir}/General/*
+%attr(755,root,root) %{xmms_general_plugindir}/*
 %attr(755,root,root) %{_bindir}/*
