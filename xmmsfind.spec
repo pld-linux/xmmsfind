@@ -3,9 +3,9 @@ Summary(pl):	Wtyczka do XMMSa umo¿liwiaj±ca skok do konkretnego pliku
 Name:		xmmsfind
 Version:	0.4.7
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		X11/Applications/Sound
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 URL:		X11/Applications/Sound
 BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -41,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc BUGS COPYING README TODO VERSION
+%doc BUGS README TODO VERSION
 %attr(755,root,root) %{_xmms_plugin_dir}/General/*
 %attr(755,root,root) %{_bindir}/*
