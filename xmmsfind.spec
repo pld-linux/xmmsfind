@@ -1,12 +1,12 @@
 Summary:	Playlist "jump to file" plugin for XMMS
 Summary(pl):	Wtyczka do XMMSa umo¿liwiaj±ca skok do konkretnego pliku
 Name:		xmmsfind
-Version:	0.5.0
+Version:	0.5.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/xmmsfind/%{name}-%{version}.tar.gz
-# Source0-md5:	909b1532e1dd41b71b05c8e1febcf514
+# Source0-md5:	9d246c0298e235eb637e47464fe08854
 URL:		http://xmmsfind.sourceforge.net/
 BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
