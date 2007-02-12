@@ -1,5 +1,5 @@
 Summary:	Playlist "jump to file" plugin for XMMS
-Summary(pl.UTF-8):   Wtyczka do XMMS-a umożliwiająca skok do konkretnego pliku
+Summary(pl.UTF-8):	Wtyczka do XMMS-a umożliwiająca skok do konkretnego pliku
 Name:		xmmsfind
 Version:	0.5.2
 Release:	1
